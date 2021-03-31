@@ -43,3 +43,19 @@
             text-shadow: 0 0 1rem rgb(0 0 0 / 75%);
             color: white;
         }
+
+
+        table.projectTable {
+            width: 100%;
+        }
+
+        table.projectTable td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        table.projectTable tr > td:first-child {
+            background-color: #2e3e80;
+            color: white;
+            font-weight: bold;
+        }
