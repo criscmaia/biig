@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="./index.css" rel="stylesheet">
+
+    <title>BIIG - Partners</title>
+</head>
+
+<body class="limit1130 bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="menu"></nav>
+    <div class="container-fluid" id="banner"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9">
+                <p>BIiG has established a collaboration with the following partners: 
+                </p>
+                <ul>
+                    <li>Harokopio University – <a href="https://www.hua.gr/">Harokopio University of Athens</a> is a public university dedicated to promoting research and learning in a small, well focused set of intellectual areas. The university, situated in the centre of Athens and close to the UNESCO World Heritage Centre of the Acropolis, originates from an educational institution that was first established in 1929 and gained the status of University in 1990. It takes its name from the national benefactor Panagis Harokopos. You can find more information <a href="./partners/harokopio-university.html">here</a>.</li>
+                    <li>Kissifer – <a href="https://kissifer.gr/">Kissifer</a> is a leading centre of pre-school education and nursery. The centre practices Reggio Emilia philosophy based on the principles of respect and responsibility. You can find more information <a href="./partners/kissifer.html">here</a>.</li>
+                    <li>FunDom – <a href="https://fundom.gr/">FunDom</a> is perhaps Athens’ biggest private, indoors playground. Emphasis is given on developing a recreational and educational facility where children are able to interact, create and engage with a wide range of activities led by highly-trained staff. FunDom’s aim is to offer the best and safest environment for young learners to experience unique techniques and innovative activities designed for children’s growth. You can find more information <a href="./partners/fundom.html">here</a>.</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 dark-gray" id="keyDetails"></div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(function() {
+        $("#menu").load("menu.html");
+        $("#banner").load("banner.html");
+        $("#keyDetails").load("keyDetails.html");
+        $("#footer").load("footer.html");
+    });
+
+</script>
+
+</html>
