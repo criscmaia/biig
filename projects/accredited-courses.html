@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="./index.css" rel="stylesheet">
+
+    <title>BIIG - Projects/Accredited courses</title>
+</head>
+
+<body class="limit1130 bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="menu"></nav>
+    <div class="container-fluid" id="banner"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9">
+                <p>BIiG collaborates with the Lifelong Learning Centre of Harokopio University to offer a range of accredited courses. These courses are intended for university graduates, graduates of post-secondary education, as well as professionals from sectors that require skills in the relevant fields. Each course is accredited with 4 ECVET and its duration is approximately 4 months, with a maximum allowed period for completion of 7 months. The delivery of the taught components takes place via synchronous, online sessions and learners have access to the learning materials via BIiG’s training platform. Both training certificates and credit recognition are awarded by HUA’s Lifelong Learning Centre, while a certificate of completion is also issued by BIiG. The available courses are:
+                </p>
+                <ul>
+                    <li>Innovation and Creativity – this course describes the role of innovation and creativity for organisations. It considers models used to help understand and recognise their importance, as well as techniques to facilitate their use as part of strategic development.</li>
+                    <li>Psychology of Entrepreneurship – this course aims to introduce the fundamental principles of the science of psychology, relating them to the entrepreneurial perspective of business management.
+                    </li>
+                    <li>Technopreneurship – this course aims to provide learners with the knowledge and skills needed to establish a new techno business. It includes understanding the characteristics of entrepreneurs, planning, marketing and finance.
+                    </li>
+                    <li>Innovative Technologies in Computing – this course looks at innovative trends and disruptive advances taking place and examines the new generation of skills and knowledge that will be required to work successfully in the sector.
+                    </li>
+                    <li>Managing a Computing Project – this course will support learners tol find out about different project management tools and techniques that can be used when managing a computing project.
+                    </li>
+                    <li>Management Information Systems – this course focuses on understanding concepts of information systems and how they support business needs in terms of information processing and data processing.
+                    </li>
+                </ul>
+                <p>For more information email us at info@biig.uk.
+                </p>
+            </div>
+            <div class="col-lg-3 dark-gray" id="keyDetails"></div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(function() {
+        $("#menu").load("../menu.html");
+        $("#banner").load("../banner.html");
+        $("#keyDetails").load("../keyDetails.html");
+        $("#footer").load("../footer.html");
+    });
+
+</script>
+
+</html>
