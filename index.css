@@ -39,7 +39,14 @@
             margin-bottom: 20px;
         }
 
-        #banner .col-lg-10 {
+        /*        #banner */
+        h1,
+        h2 {
+            font-family: "Georgia", Times, serif;
+            letter-spacing: .2rem;
+        }
+
+        #banner .col-lg-6 {
             text-shadow: 0 0 1rem rgb(0 0 0 / 75%);
             color: white;
         }
