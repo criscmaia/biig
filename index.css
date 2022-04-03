@@ -15,7 +15,7 @@
         }
 
         /* From cssbuttons.io by @e-coders */
-        button {
+        .bts button {
             appearance: none;
             background-color: #FAFBFC;
             border: 1px solid rgba(27, 31, 35, 0.15);
@@ -28,7 +28,7 @@
             font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
             font-size: 14px;
             font-weight: 500;
-            line-height: 20px;
+            line-height: 15px;
             list-style: none;
             padding: 6px 16px;
             position: relative;
@@ -74,7 +74,13 @@
 
         .bts button {
             width: 100%;
-            margin: 10px 0px;
+            margin: 5px 0px;
+        }
+
+        .std_btn {
+            /*            box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;*/
+            /*            box-shadow: inset #f44336 -9px 12px 10px 11px, #f44336 0 1px 0 inset !important;*/
+            box-shadow: inset #198fff 1px 0px 10px 0px !important;
         }
 
         .limit1130 {
