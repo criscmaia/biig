@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="/index.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/intl-tel-input-17.0.0/build/css/intlTelInput.min.css">
+    <script src="/intl-tel-input-17.0.0/build/js/intlTelInput.min.js"></script>
+
+    <title>BIIG - Contact</title>
+</head>
+
+<body class="limit1130 bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="menu"></nav>
+    <div class="container-fluid" id="banner"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9">
+                <p>If you wish our staff to contact you with more information about BIiG’s services, please fill in the form below: </p>
+                <div class="form container">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="email">Enter your email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email..">
+
+                        <label for="phone">Enter your phone number:</label>
+                        <br>
+                        <input type="tel" id="phone" name="phone">
+                        <br>
+                        <br>
+
+                        <label for="service">Service:</label>
+                        <select id="service" name="service">
+                            <option value="Online UK Higher Education Degrees">Online UK Higher Education Degrees</option>
+                            <option value="Accredited Training Courses">Accredited Training Courses</option>
+                            <option value="Training Academies">Training Academies</option>
+                            <option value="Training Workshops">Training Workshops</option>
+                            <option value="Training Seminars">Training Seminars</option>
+                            <option value="Personal Effectiveness Programme">Personal Effectiveness Programme</option>
+                            <option value="Human Resources Development">Human Resources Development</option>
+                            <option value="International Study Visits">International Study Visits</option>
+                            <option value="Consultancy Services">Consultancy Services</option>
+                            <option value="Certification of Educational Programmes">Certification of Educational Programmes</option>
+                            <option value="Operational Programme Funding Proposals">Operational Programme Funding Proposals</option>
+                            <option value="Erasmus+ Funding Proposals">Erasmus+ Funding Proposals</option>
+                            <option value="Online English Tests for Children">Online English Tests for Children</option>
+                            <option value="Certified Language Examinations">Certified Language Examinations</option>
+                            <option value="Coaching School">Coaching School</option>
+                            <option value="First Aid Training">First Aid Training</option>
+                        </select>
+
+                        <label for="notes">Notes:</label>
+                        <textarea id="notes" name="notes" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-3 dark-gray" id="keyDetails"></div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(function() {
+        $("#menu").load("/en/menu.html");
+        $("#banner").load("/en/banner.html");
+        $("#keyDetails").load("/en/keyDetails.html");
+        $("#footer").load("/en/footer.html");
+    });
+
+
+
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+        'preferredCountries': ["gb", "gr"]
+    });
+
+</script>
+
+</html>
